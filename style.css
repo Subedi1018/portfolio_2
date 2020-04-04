@@ -1,0 +1,130 @@
+/*  Write  heading on font- cinzel decorative but all the other text in lato*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+  font-family: monospace;
+  color: #eee;
+}
+body{
+  width: 100%;
+  height: 100%;
+  background-color: #090a20;
+}
+a{
+  text-decoration: none;
+  color: #eee;
+}
+p{
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+img{
+  width: 100%;
+}
+
+header{
+  width: 100%;
+  height: 100vh;
+}
+ .top-nav{
+  width: 100%;
+  position: fixed;
+  background: #2d3436;
+}
+.nav-list{
+  list-style: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+li{
+  margin: 0 2rem;
+}
+.nav-link{
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.nav-link:hover,
+.nav-link:focus
+{
+  background: linear-gradient(to right, #ecf0f1, #d35400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Header */
+.landing-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+.landing-text h1{
+  font-size: 7rem;
+  background: linear-gradient(to top, #31c29e 25%, #9d33bb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem;
+  user-select: none;
+  line-height: 1.1;
+}
+.landing-text h6{
+  font-size: 2rem;
+}
+.about .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-heading{
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-bottom: 6rem;
+}
+
+.about-heading h1{
+  font-size: 10rem;
+  opacity: 0.3;
+}
+.about-heading h6{
+  font-size: 2rem;
+  font-weight: 300;
+}
+.profile-img{
+  flex: 1;
+  margin-right: 5rem;
+}
+
+.about-details{
+  flex: 1;
+}
+.social-media{
+  margin-top: 5rem;
+}
+.social-media i{
+  font-size: 5rem;
+  transition: color 650ms;
+}
+.fa-facebook-square:hover{
+  color: #4267b2;
+}
+.fa-twitter-square:hover{
+  color: #38a1f3;
+}
+.fa-github-square:hover{
+  color: #24292e;
+}
