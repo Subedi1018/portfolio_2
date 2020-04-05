@@ -14,9 +14,14 @@ body{
   width: 100%;
   height: 100%;
   background-color: #090a20;
+  /* in case of background image
+  background: url() no-repeat center fixed;
+  background-size: cover
+  */
+
 }
 section{
-  padding: 6rem;
+  padding: 6rem 0;
 }
 a{
   text-decoration: none;
@@ -369,6 +374,7 @@ input[type= "submit"]:hover{
   border-radius: 100%;
   display: flex;
   animation: pulse 2s infinite;
+  cursor: pointer;
 }
 .up i{
   color: #16162d;
@@ -390,4 +396,88 @@ input[type= "submit"]:hover{
   100%{
     box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
   }
+}
+
+/* media queries */
+@media screen and (max-width: 768px){
+   /* body{
+      width: 100%;
+      height: 100%;   delete this width and height for media query
+      background-color: #090a20;
+    } */
+    .landing-text h1{
+      font-size: 9rem;
+    }
+    .landing-text h6{
+      font-size: 1.7rem;
+    }
+    .about-heading h1{
+      font-size: 8rem;
+    }
+    .section-heading h1{
+      font-size: 3rem;
+    }
+    .about-details .nav-list{
+      flex-direction: initial;
+    }
+    .about-details li{
+      margin: 0 2rem;
+    }
+    .icon-container{
+      width: 7rem;
+      height: 7rem;
+    }
+    .icon-container i{
+      font-size: 4rem;
+    }
+    .timeline ul{
+      margin: 0 0 0 auto;
+    }
+    .timeline .data::before{
+      left: -20rem;
+    }
+    .timeline .date::after{
+      left: -8rem;
+    }
+}
+
+/* media query for smaller devices */
+@media screen and (max-width: 600px){
+  .landing-text h1{
+    font-size: 8rem;
+  }
+  .landing-text h6{
+    font-size: 1.4rem;
+  }
+  .about .container{
+    flex-direction: column;
+  }
+  .profile-img{
+    margin: 0 0 7rem 0;
+  }
+  .portfolio-item{
+    flex-direction: column;
+  }
+  .portfolio-img{
+    margin: 0 0 2rem 0;
+    order: 1;
+  }
+  .portfolio-description{
+    margin: 0;
+    order: 2;
+  }
+  .timeline p{
+    font-size: 1.6rem;
+  }
+  .timeline .date::before{
+    font-size: 1.4rem;
+  }
+  form{
+    width: 100%;
+  }
+
+  .up{
+    right: 2rem;
+  }
+
 }
